@@ -1,0 +1,41 @@
+header {
+  align-items: center;
+}
+
+#header-logo {
+  display: block;
+  margin: 10px auto 0px auto;
+  height: 50px;
+  width: 130px;
+}
+
+body {
+
+}
+
+.form-box {
+  border: 1px solid lightgrey;
+  padding: 25px;
+  margin: 25px auto;
+}
+
+.form-group {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.floating-text {
+  text-align: right !important;
+  float: right !important;
+}
+
+.btn {
+  background-color: rgb(240, 193, 75);
+  z-index: 20;
+  color: black;
+}
+
+
+footer {
+
+}
