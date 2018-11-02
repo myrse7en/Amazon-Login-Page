@@ -17,10 +17,13 @@ body {
 }
 
 .body-seperator {
-  /* display: inline; */
+  /* display: inline;
   font-weight: lighter;
   float: right;
-  text-align: right;
+  text-align: right; */
+  /* position: relative;
+  right: 0; */
+  float: right;
 }
 
 .alignleft {
@@ -44,8 +47,7 @@ body {
 }
 
 /* .floating-text {
-  text-align: right !important;
-  float: right !important;
+
 } */
 
 .form-check {
@@ -58,6 +60,10 @@ body {
   padding-top: 1px;
   margin-top: 26px;
   line-height: 0;
+}
+
+label {
+  width: 100%;
 }
 
 .btn-primary {
