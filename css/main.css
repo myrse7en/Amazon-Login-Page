@@ -1,18 +1,35 @@
 header {
+  overflow-x: hidden;
   align-items: center;
 }
 
 #header-logo {
   display: block;
   margin: 10px auto 0px auto;
-  height: 50px;
-  width: 130px;
+  height: 45px;
+  width: 125px;
 }
 
 body {
-
+  overflow-x: hidden;
+  font-family: sans-serif;
+  margin-top: 0px;
 }
 
+.body-seperator {
+  /* display: inline; */
+  font-weight: lighter;
+  float: right;
+  text-align: right;
+}
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
 .form-box {
   border: 1px solid lightgrey;
   padding: 25px;
@@ -22,20 +39,89 @@ body {
 .form-group {
   font-weight: bold;
   font-size: 12px;
+  margin: 20px auto;
+  line-height: 5px;
 }
 
-.floating-text {
+/* .floating-text {
   text-align: right !important;
   float: right !important;
+} */
+
+.form-check {
+ font-size: 12px;
 }
 
-.btn {
+.form-divider {
+  text-align: center;
+  position: relative;
+  padding-top: 1px;
+  margin-top: 26px;
+  line-height: 0;
+}
+
+.btn-primary {
+  margin: 20px auto;
+  font-size: 80%;
   background-color: rgb(240, 193, 75);
   z-index: 20;
   color: black;
 }
 
+.btn-secondary {
+  font-size: 80%;
+  background-color: rgb(255, 255, 255);
+  z-index: 20;
+  color: black;
+  background-image: linear-gradient(rgb(247, 248, 250),
+  rgb(231, 233, 236));
+}
+
+nav:before {
+  content: '';
+  position: absolute;
+  right: 75%;
+  left: 0;
+  width: auto;
+  height: 2px;
+  display: block;
+  background-image: linear-gradient(to right, white, transparent);
+}
+
+nav {
+  position: relative;
+  width: auto;
+  height: 2px;
+  background-color: lightgrey;
+  margin-bottom: 20px;
+}
+
+nav:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: 75%;
+  width: auto;
+  height: 2px;
+  display: block;
+  background-image: linear-gradient(to left, white, transparent);
+}
 
 footer {
+  overflow-x: hidden;
+  /* border-top: 2px solid lightgrey; */
+  /* float: center; */
 
+  position: relative;
+  display: block;
+  text-align: center;
+
+  font-size: 70%;
+  font-family: sans-serif;
+  line-height: 25px;
+}
+
+.footer-seperator {
+  display: inline-block;
+  width: 20px;
 }
